@@ -2,11 +2,11 @@
 // Coded by Muhammad shariq Shafiq
 
 //Implementation of Interface 
-class EvenOdd implements RunnableTask{
+class EvenOddT implements RunnableTask{
     final int value;
     String name;
     
-    public EvenOdd(String name , int value ){
+    public EvenOddT(String name , int value ){
         this.name = name;
         this.value = value;
     }
@@ -30,8 +30,8 @@ class EvenOdd implements RunnableTask{
     public static void main(String[] args) {
         int value = 10000;
         //Creating Objects and calling parameterized Constructor
-        EvenOdd thread1 = new EvenOdd("Thread1", value);
-        EvenOdd thread2 = new EvenOdd("Thread2", value);
+        EvenOddT thread1 = new EvenOddT("Thread1", value);
+        EvenOddT thread2 = new EvenOddT("Thread2", value);
 
         Thread t1 = new Thread(thread1);
         Thread t2 = new Thread(thread2);
